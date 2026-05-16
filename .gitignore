@@ -1,0 +1,16 @@
+﻿# Windows / macOS
+.DS_Store
+Thumbs.db
+
+# Microsoft Office temporary files
+~$*
+*.tmp
+
+# Python / Jupyter cache
+__pycache__/
+.ipynb_checkpoints/
+
+# Environments and secrets
+.env
+.venv/
+venv/
