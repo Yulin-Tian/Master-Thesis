@@ -7,7 +7,7 @@
 
 <p align="center">
   <strong>Yulin Tian &nbsp;&bull;&nbsp; Ilia Kornietskii</strong><br/>
-  Master of Science in Data Science for Business &nbsp;|&nbsp; Master of Science in Strategic Marketing Management<br/>
+  Master of Science in Strategic Marketing Management &nbsp;|&nbsp; Master of Science in Data Science for Business<br/>
   BI Norwegian Business School &nbsp;|&nbsp; Supervisor: Auke Hunneman<br/>
   <em>GRA 19701 Master Thesis &nbsp;|&nbsp; June 2025</em>
 </p>
@@ -76,21 +76,114 @@ We analysed **1,898,445 Glassdoor employee reviews** across **86 large publicly 
 
 ## Selected Figures
 
-<p align="center">
-  <img src="figures/sentiment/Fig4.10_PanelRegression_CoeffPlot.png" width="48%" alt="Panel Regression"/>
-  &nbsp;&nbsp;
-  <img src="figures/sentiment/Fig4.14_HorizonAnalysis.png" width="48%" alt="Horizon Analysis"/>
-</p>
-<p align="center"><em>Left: Panel regression coefficient across four model specifications. Right: The negative effect strengthens at longer horizons (1m → 3m → 6m).</em></p>
+  ### Part I — "What Employees Feel": Sentiment & Stock Price Analysis
 
-<p align="center">
-  <img src="figures/sentiment/Fig4.17_COVIDResilience_HighLowSentiment.png" width="48%" alt="COVID Resilience"/>
-  &nbsp;&nbsp;
-  <img src="figures/topic_modelling/Fig5.13_IndustryBarometer_Heatmap.png" width="48%" alt="Industry Barometer"/>
-</p>
-<p align="center"><em>Left: COVID-19 resilience — high-sentiment firms recovered faster. Right: Industry Barometer heatmap across 12 industries.</em></p>
+  <p align="center">
+    <img src="figures/sentiment/Fig4.1_CompositeSentiment_Distribution.png" width="48%" alt="Composite Distribution"/>
+    &nbsp;&nbsp;
+    <img src="figures/sentiment/Fig4.2_PCA_SubRatings.png" width="48%" alt="PCA Validation"/>
+  </p>
+  <p align="center"><em>Left: Distribution of the Composite Sentiment Index across 1.9M reviews. Right: PCA validation — PC1 explains 67.7% of sub-rating variance, confirming a strong common factor.</em></p>
 
----
+  <p align="center">
+    <img src="figures/sentiment/Fig4.10_PanelRegression_CoeffPlot.png" width="48%" alt="Panel Regression"/>
+    &nbsp;&nbsp;
+    <img src="figures/sentiment/Fig4.14_HorizonAnalysis.png" width="48%" alt="Horizon Analysis"/>
+  </p>
+  <p align="center"><em>Left: Panel regression coefficient across four models — the key transition from near-zero (Pooled OLS) to significantly negative (Two-Way FE). Right: The negative effect strengthens at
+  longer horizons (1m → 3m → 6m), ruling out noise.</em></p>
+
+  <p align="center">
+    <img src="figures/sentiment/Fig4.12_BetweenEstimator.png" width="48%" alt="Between Estimator"/>
+    &nbsp;&nbsp;
+    <img src="figures/sentiment/Fig4.15_QuintilePortfolio_CumulativeReturns.png" width="48%" alt="Portfolio Sort"/>
+  </p>
+  <p align="center"><em>Left: Between estimator — 86-firm cross-section shows positive but marginally non-significant trend (β = +0.018, p = 0.068). Right: Quintile portfolio cumulative returns and the Q5−Q1
+  long-short spread.</em></p>
+
+  ### COVID-19 Natural Experiment — Organisational Resilience
+
+  <p align="center">
+    <img src="figures/sentiment/Fig4.17_COVIDResilience_HighLowSentiment.png" width="75%" alt="COVID Resilience"/>
+  </p>
+  <p align="center"><em>High pre-COVID sentiment firms (green) substantially outperformed low-sentiment firms (red) through the pandemic crash and recovery (Jan 2019 – Dec 2021). The divergence emerges during
+  recovery, not at the trough.</em></p>
+
+  ### Theoretical Framework — The Dual-Level Sentiment Model
+
+  <p align="center">
+    <img src="figures/sentiment/Fig_DualLevel_ConceptualFramework.png" width="80%" alt="Dual-Level Model"/>
+  </p>
+  <p align="center"><em>Our original theoretical contribution. Left: cross-sectional quality signal (higher sentiment → higher average returns). Right: within-firm mean reversion (the market prices in quality
+  before the Glassdoor peak).</em></p>
+
+  ### Part II — "What Employees Say": Topic Modelling & Industry Intelligence
+
+  <p align="center">
+    <img src="figures/topic_modelling/Fig5.1_TopTokens_ProsVsCons.png" width="48%" alt="Top Tokens"/>
+    &nbsp;&nbsp;
+    <img src="figures/topic_modelling/Fig5.5_TopicDistribution_Overall.png" width="48%" alt="Topic Distribution"/>
+  </p>
+  <p align="center"><em>Left: Top 30 most frequent tokens in Pros versus Cons text after preprocessing. Right: Overall topic distribution — 11 interpretable topics discovered in each category via LDA.</em></p>
+
+  <p align="center">
+    <img src="figures/topic_modelling/Fig5.3_WordCloud_Pros_Topics.png" width="48%" alt="Pros Word Clouds"/>
+    &nbsp;&nbsp;
+    <img src="figures/topic_modelling/Fig5.4_WordCloud_Cons_Topics.png" width="48%" alt="Cons Word Clouds"/>
+  </p>
+  <p align="center"><em>Word clouds for all 11 Pros topics (left) and 11 Cons topics (right). Each cloud represents a discovered latent theme in employee discourse.</em></p>
+
+  <p align="center">
+    <img src="figures/topic_modelling/Fig5.6_Sentiment_by_ProsTopic.png" width="48%" alt="Sentiment by Pros Topic"/>
+    &nbsp;&nbsp;
+    <img src="figures/topic_modelling/Fig5.7_Sentiment_by_ConsTopic.png" width="48%" alt="Sentiment by Cons Topic"/>
+  </p>
+  <p align="center"><em>Sentiment–Topic Bridge: mean VADER score by topic. Management and culture topics carry the most intense emotional valence — the highest-leverage intervention point for HR
+  leaders.</em></p>
+
+  ### Industry Barometer — For HR Leaders & Policymakers
+
+  <p align="center">
+    <img src="figures/topic_modelling/Fig5.10_IndustryBarometer_ProsTopicShare.png" width="48%" alt="Industry Pros Topics"/>
+    &nbsp;&nbsp;
+    <img src="figures/topic_modelling/Fig5.13_IndustryBarometer_Heatmap.png" width="48%" alt="Industry Heatmap"/>
+  </p>
+  <p align="center"><em>Left: What employees praise varies dramatically by industry — technology firms discuss career growth, fast-food firms discuss flexibility and perks. Right: Normalised industry heatmap
+  across sentiment and rating dimensions.</em></p>
+
+  <p align="center">
+    <img src="figures/topic_modelling/Fig5.12_IndustrySentimentRadar.png" width="55%" alt="Industry Radar"/>
+  </p>
+  <p align="center"><em>Industry Sentiment Radar: normalised profiles across pros sentiment, cons sentiment (inverted), and average rating for all 12 industries.</em></p>
+
+  ### Firm Competitor Analysis — For Investors & Analysts
+
+  <p align="center">
+    <img src="figures/sentiment/Fig4.6_DualAxis_Sentiment_StockReturn_byIndustry.png" width="75%" alt="Dual Axis All Industries"/>
+  </p>
+  <p align="center"><em>Dual-axis overlay: monthly composite sentiment (z-score) and stock log-return for every firm, grouped by industry. Visual co-movement varies across sectors.</em></p>
+
+  <p align="center">
+    <img src="figures/topic_modelling/Fig5.14_FirmBubbleChart_SentimentRating.png" width="48%" alt="Firm Bubble Chart"/>
+    &nbsp;&nbsp;
+    <img src="figures/topic_modelling/Fig5.15_FirmRanking_WithinIndustry.png" width="48%" alt="Within-Industry Ranking"/>
+  </p>
+  <p align="center"><em>Left: Firm competitor map — pros VADER sentiment vs average rating (bubble size = review volume, colour = industry). Right: Within-industry firm ranking for the four largest
+  sectors.</em></p>
+
+  <p align="center">
+    <img src="figures/topic_modelling/Fig5.16b_IndustryDivergenceGrid.png" width="75%" alt="Industry Divergence Grid"/>
+  </p>
+  <p align="center"><em>Topic divergence within each industry: green = aligns with industry norm, orange = one topic diverges, red = both topics diverge. Firms deviating from industry norms may face unique
+  strategic challenges or opportunities.</em></p>
+
+  ### The Master List — All 86 Firms Ranked
+
+  <p align="center">
+    <img src="figures/topic_modelling/Fig5.16c_MasterFirmSentimentList.png" width="90%" alt="Master Firm List"/>
+  </p>
+  <p align="center"><em>The complete employee sentiment ranking of all 86 firms across 12 industries, with topic profiles and composite scores. This single figure summarises the entire employee voice landscape
+   of our dataset — from the highest-rated to the lowest-rated employer, with their dominant discussion themes and industry context. Covers 1,898,445 reviews spanning January 2016 to March 2023.</em></p>
 
 ## Repository Structure
 
