@@ -244,9 +244,9 @@ Employee sentiment, stock performance, and the dual-level quality signal
 
 | | Name | Programme | Contact |
 |--|------|-----------|---------|
-| 🎓 | **Yulin Tian** | MSc Data Science for Business | BI Norwegian Business School |
-| 🎓 | **Ilia Kornietskii** | MSc Strategic Marketing Management | BI Norwegian Business School |
-| 👨‍🏫 | **Auke Hunneman** | Supervisor | Associate Professor, BI |
+| 🎓 | **Yulin Tian** | MSc Strategic Marketing Management | BI Norwegian Business School |
+| 🎓 | **Ilia Kornietskii** | MSc Data Science for Business | BI Norwegian Business School |
+| 👨‍🏫 | **Auke Hunneman** | Supervisor | Associate Dean of the MSc Business Analytics Program, Associate Professor, BI |
 
 ---
 
