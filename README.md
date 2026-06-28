@@ -9,7 +9,7 @@
   <strong>Yulin Tian &nbsp;&bull;&nbsp; Ilia Kornietskii</strong><br/>
   Master of Science in Strategic Marketing Management &nbsp;|&nbsp; Master of Science in Data Science for Business<br/>
   BI Norwegian Business School &nbsp;|&nbsp; Supervisor: Auke Hunneman<br/>
-  <em>GRA 19701 Master Thesis &nbsp;|&nbsp; June 2025</em>
+  <em>GRA 19701 Master Thesis &nbsp;|&nbsp; June 2026</em>
 </p>
 
 <p align="center">
